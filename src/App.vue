@@ -2,15 +2,20 @@
 import { RouterLink, RouterView } from 'vue-router'
 </script>
 
-<template>  
-    <h1>Vite + Vue3 Site</h1>
-  <nav>
-    <RouterLink to="/">Welcome</RouterLink>
-    <RouterLink to="/jobs">Jobs</RouterLink>
-    <RouterLink to="/skills">Skills</RouterLink>
-  </nav>
+<template>
+  <Suspense>
+    <div>
+      <h1>Vite + Vue3 Site</h1>
+      <nav>
+        <RouterLink to="/">Welcome</RouterLink>
+        <RouterLink to="/jobs">Jobs</RouterLink>
+        <RouterLink to="/skills">Skills</RouterLink>
+      </nav>
+    
+      <RouterView />
 
-  <RouterView />
+    </div>
+  </Suspense>
 </template>
 
 <style scoped>
