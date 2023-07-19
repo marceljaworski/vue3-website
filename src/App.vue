@@ -5,8 +5,9 @@ import { RouterLink, RouterView } from 'vue-router'
 <template>  
     <h1>Vite + Vue3 Site</h1>
   <nav>
-    <RouterLink to="/">Home</RouterLink>
-    <RouterLink to="/about">About</RouterLink>
+    <RouterLink to="/">Welcome</RouterLink>
+    <RouterLink to="/jobs">Jobs</RouterLink>
+    <RouterLink to="/skills">Skills</RouterLink>
   </nav>
 
   <RouterView />
